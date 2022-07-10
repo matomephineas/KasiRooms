@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Landlord.BookRoomActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/imageView"
+               android:layout_width="match_parent"
+               android:layout_height="185dp"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/room1" />
+
+           <RelativeLayout
+               android:layout_margin="10dp"
+               android:background="@drawable/back_background"
+               android:layout_width="40dp"
+               android:layout_height="30dp">
+
+               <ImageView
+                   android:onClick="ClickToGoBack"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:src="@drawable/ic_baseline_arrow_back_24" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/rel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="140dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/imag4"
+                   android:layout_width="130dp"
+                   android:layout_height="80dp"
+                   android:layout_marginTop="5dp"
+                   android:src="@drawable/landlord"
+                   app:civ_border_width="1dp" />
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/imag5"
+                   android:layout_width="130dp"
+                   android:layout_height="80dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginRight="20dp"
+                   android:src="@drawable/landlord"
+                   app:civ_border_width="1dp" />
+           </RelativeLayout>
+
+           <TextView
+               android:id="@+id/bookRoomAddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/rel"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="5dp"
+               android:text="179 Ilanda street moteong"
+               android:textColor="@color/black"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/UserRoomType"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/bookRoomAddress"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="5dp"
+               android:text="type"
+               android:textColor="@color/black"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+
+           <androidx.cardview.widget.CardView
+               android:layout_below="@id/UserRoomType"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="5dp"
+               android:padding="10dp"
+               android:id="@+id/single_room_layout"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp">
+               <RelativeLayout
+
+                   android:padding="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:id="@+id/rrr"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_centerHorizontal="true"
+                       >
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/linear1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="rent"
+                           android:textColor="@color/black"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/UserRentAmount"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="R950"
+                           android:textColor="@color/black"
+                           android:textStyle="bold" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_marginRight="20dp"
+                       android:id="@+id/linear2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="size:"
+                           android:textColor="@color/black"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/UserRoomSize"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="small"
+                           android:textColor="@color/black"
+                           android:textStyle="bold" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/linear1"
+                       android:layout_marginRight="5dp"
+                       android:layout_marginTop="5dp"
+                       android:orientation="horizontal">
+                       <LinearLayout
+                           android:id="@+id/linear"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+
+                           android:layout_marginRight="10dp"
+                           android:orientation="horizontal"
+                           >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="status"
+                               android:textColor="@color/black"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/UserRoomStatus"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:text="Availale"
+                               android:textColor="@color/green"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </LinearLayout>
+
+
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/single_room_layout"
+               android:layout_marginTop="5dp"
+               android:orientation="vertical"
+               android:padding="10dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="Landlord Details"
+                   android:textColor="@color/black"
+                   android:textStyle="bold" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="5dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name      : "
+                       android:textColor="@color/black" />
+
+                   <TextView
+                       android:id="@+id/landlordname"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="tumelo mmola"
+                       android:textColor="@color/black" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="5dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Contact   : "
+                       android:textColor="@color/black" />
+
+                   <TextView
+                       android:id="@+id/landlordContact"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="0720989850"
+                       android:textColor="@color/black" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="5dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Email       : "
+                       android:textColor="@color/black" />
+
+                   <TextView
+                       android:id="@+id/landlordEmail"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="tumelo mmola"
+                       android:textColor="@color/black" />
+               </LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:text="Book room"
+    android:textAllCaps="false"
+    android:onClick="BtnBookRoom"/>
+               <TextView
+                   android:visibility="invisible"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                   android:text="Send Message to landlord"
+                   android:textColor="@color/black"
+                   android:textStyle="bold" />
+
+               <LinearLayout
+                   android:visibility="invisible"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Message"
+                       android:textColor="@color/black" />
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:id="@+id/editTextMessage"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/edittextbackground">
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="Type your message to landlord" />
+                   </com.google.android.material.textfield.TextInputLayout>
+
+                   <Button
+                       android:id="@+id/btnSendMessage"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="60dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginRight="60dp"
+                       android:drawableLeft="@drawable/ic_baseline_sms_24"
+                       android:drawableTint="@color/white"
+                       android:onClick="sendMessageToLandlord"
+                       android:text="Send message via sms"
+                       android:textAllCaps="false" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:visibility="invisible"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                       android:text="Or send a message to landlord using"
+                       android:textColor="@color/black"
+                       android:textStyle="bold" />
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp">
+
+                       <ImageView
+                           android:id="@+id/email"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:onClick="sendEmilToLandlord"
+                           android:src="@drawable/email" />
+
+                       <ImageView
+
+                           android:id="@+id/whatsapp"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:layout_alignParentRight="true"
+                           android:onClick="sendWhatsaMessageToLandlord"
+                           android:src="@drawable/whatsapp" />
+                   </RelativeLayout>
+               </LinearLayout>
+           </LinearLayout>
+       </RelativeLayout>
+
+   </ScrollView>
+</RelativeLayout>

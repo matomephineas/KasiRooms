@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Landlord.ViewAvailableRoomsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:theme="@style/Theme.KasiRooms.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.KasiRooms.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/relative2"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_background"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/backBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_baseline_arrow_back_24" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/adamina"
+                    android:text="Gauteng"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/appbar"/>
+    <LinearLayout
+        android:layout_below="@id/view"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room type: "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/roomType"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartment"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+     <RelativeLayout
+         android:layout_marginTop="10dp"
+         android:layout_below="@id/linearlayout"
+         android:id="@+id/linear4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/search"
+             android:background="@drawable/edittextbackground"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="70dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <EditText
+                 android:background="@android:color/transparent"
+                 android:drawableTint="@color/black"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="Search suburb/town" />
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <TextView
+             android:id="@+id/btnSearch"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:background="@color/black"
+             android:padding="6dp"
+             android:text="Search"
+             android:textColor="@color/white" />
+
+     </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/linear4"
+        android:id="@+id/linear"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:background="@drawable/filter_btn_background"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Filter by"
+            android:textAllCaps="false"
+            android:id="@+id/filterby"
+            android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/ic_baseline_filter_list_24"/>
+        <Button
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/sort_btn_background"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Sort by"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sortby"
+            android:drawableRight="@drawable/ic_baseline_sort_24"/>
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linear"
+    android:layout_marginTop="10dp"
+    android:id="@+id/recyclerview2"/>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/backgroundimage"
+        app:civ_border_color="@color/purple_200"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tvRegisterLandlord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Registration page"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextLandlordName"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterLandlord"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:hint="enter full names"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextLandlordEmailAddress"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLandlordName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="enter email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editLandlordTextPassword"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLandlordEmailAddress"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editLandlordTextAddress"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLandlordTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter address"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editLandlordTextContact"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLandlordTextAddress"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="enter contact"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLandlordTextContact"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Usertype"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioButtonSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLandlordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButtonSex"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:onClick="RegisterLandlord"
+        android:text="Register" />
+
+
+    <TextView
+
+        android:id="@+id/btnSendLandlordToLogin"
+        android:layout_below="@id/btnLandlordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:onClick="ServiceLandlordToLogin"
+        android:text="Already registered? Login here"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginRight="118dp" />
+</RelativeLayout>

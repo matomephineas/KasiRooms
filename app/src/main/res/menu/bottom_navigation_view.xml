@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_add_room"
+        android:icon="@drawable/ic_baseline_add_home_work_24"
+        android:title="Add Room" />
+
+    <item
+        android:id="@+id/nav_view_room"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="View Rooms" />
+    <item
+        android:id="@+id/nav_view_request"
+        android:icon="@drawable/requests"
+        android:title="View Request" />
+    <item
+        android:id="@+id/nav_chats"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="Chats" />
+    <item
+        android:id="@+id/nav_view_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="logout" />
+
+</menu>

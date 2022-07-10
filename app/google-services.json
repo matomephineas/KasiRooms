@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46606586100",
+    "project_id": "kasirooms-8c977",
+    "storage_bucket": "kasirooms-8c977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46606586100:android:1e92c77bbd2ff70a0c4ea1",
+        "android_client_info": {
+          "package_name": "com.example.kasirooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46606586100-fnfvotd0c3ln2gjr3pjttjbkphpu115i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgF9V8oG8UlErMaDg288lh672y6VB4fb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46606586100-fnfvotd0c3ln2gjr3pjttjbkphpu115i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">KasiRooms</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">KasiRooms</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="roomType">
+        <item>Bachelor</item>
+        <item>Flat</item>
+        <item>Apartment</item>
+        <item>Town house</item>
+        <item>Cottage</item>
+        <item>Single Family home</item>
+    </string-array>
+    <string-array name="roomSize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="status">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="userType">
+        <item>Tenant</item>
+        <item>Landlord</item>
+    </string-array>
+    <string-array name="province">
+        <item>Limpopo</item>
+        <item>Eastern cape</item>
+        <item>Free state</item>
+        <item>Gauteng</item>
+        <item>Kwazulu natal</item>
+        <item>Mpumalanga</item>
+        <item>North west</item>
+        <item>Northern cape</item>
+        <item>Western cape</item>
+    </string-array>
+</resources>
